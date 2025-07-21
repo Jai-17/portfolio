@@ -1,6 +1,6 @@
 "use client";
 
-import Dither from "@/components/Dither";
+// import Dither from "@/components/Dither";
 import { FloatingDock } from "@/components/FloatingDock";
 import {
   IconHome,
@@ -50,16 +50,16 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       <ClickSpark>
       <div className="relative min-h-screen">
         <div className="fixed inset-0 z-[-2]">
-          <Dither
+          {/* <Dither
             waveColor={[0.5, 0.5, 0.5]}
-            disableAnimation={true}
+            disableAnimation={false}
             enableMouseInteraction={false}
             mouseRadius={0.3}
             colorNum={4}
             waveAmplitude={0.3}
             waveFrequency={7}
             waveSpeed={0.05}
-          />
+          /> */}
         </div>
 
         <div className="fixed inset-0 z-[-1] bg-black opacity-70 pointer-events-none" />
