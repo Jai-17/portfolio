@@ -52,8 +52,8 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <div className="fixed inset-0 z-[-2]">
           <Dither
             waveColor={[0.5, 0.5, 0.5]}
-            disableAnimation={false}
-            enableMouseInteraction={true}
+            disableAnimation={true}
+            enableMouseInteraction={false}
             mouseRadius={0.3}
             colorNum={4}
             waveAmplitude={0.3}
