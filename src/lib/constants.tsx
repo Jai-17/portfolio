@@ -1,0 +1,73 @@
+import {
+  SiC,
+  SiCplusplus,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiNextdotjs,
+  SiReact,
+  SiExpress,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiPrisma,
+  SiPostgresql,
+  SiMysql,
+  SiDocker,
+  SiApachekafka,
+  SiGooglecloud,
+  SiKubernetes,
+  SiGit,
+  SiRedis,
+  SiLangchain,
+  SiFigma,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobepremierepro,
+  SiBlender,
+  SiAmazon,
+  SiAdobeaftereffects
+} from "react-icons/si";
+import { PiVectorThree } from "react-icons/pi";
+
+export const languagesItems = [
+  { icon: <SiC />, name: "C" },
+  { icon: <SiCplusplus />, name: "C++" },
+  { icon: <SiJavascript />, name: "JavaScript" },
+  { icon: <SiTypescript />, name: "TypeScript" },
+  { icon: <SiPython />, name: "Python" },
+  { icon: <SiHtml5 />, name: "HTML" },
+  { icon: <SiCss3 />, name: "CSS" },
+];
+
+export const devItems = [
+  { icon: <SiNextdotjs />, name: "Next.js" },
+  { icon: <SiReact />, name: "React.js" },
+  { icon: <SiExpress />, name: "Express.js" },
+  { icon: <SiNodedotjs />, name: "Node.js" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+  { icon: <SiMongodb />, name: "MongoDB" },
+  { icon: <SiPrisma />, name: "Prisma" },
+  { icon: <SiPostgresql />, name: "PostgreSQL" },
+  { icon: <SiMysql />, name: "MySQL" },
+  { icon: <SiDocker />, name: "Docker" },
+  { icon: <SiApachekafka />, name: "Kafka" },
+  { icon: <SiAmazon />, name: "AWS" },
+  { icon: <SiGooglecloud />, name: "Google Cloud" },
+  { icon: <SiKubernetes />, name: "Kubernetes" },
+  { icon: <SiGit />, name: "Git" },
+  { icon: <SiRedis />, name: "Redis" },
+  { icon: <SiLangchain />, name: "Langchain" },
+  { icon: <PiVectorThree />, name: "Pinecone" },
+];
+
+export const designItems = [
+  { icon: <SiAdobephotoshop />, name: "Photoshop" },
+  { icon: <SiAdobeillustrator />, name: "Illustrator" },
+  { icon: <SiAdobepremierepro />, name: "Premiere Pro" },
+  { icon: <SiAdobeaftereffects />, name: "After Effects" },
+  { icon: <SiBlender />, name: "Blender" },
+  { icon: <SiFigma />, name: "Figma" },
+];
