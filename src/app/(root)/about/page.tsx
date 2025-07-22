@@ -14,11 +14,13 @@ import { designItems, devItems, languagesItems } from "@/lib/constants";
 import { PositionOfResponsibility } from "@/components/sections/PositionOfResponsibility";
 import Education from "@/components/sections/Education";
 import { motion } from "motion/react";
+import Footer from "@/components/sections/Footer";
 
 const Page = () => {
   const words = ["cool", "creative", "aesthetic", "functional"];
 
   return (
+    <>
     <main className="relative w-full px-4 py-16 flex flex-col items-center">
       <div className="max-w-4xl w-full">
         <p className="text-neutral-400 text-xl italic tracking-widest">
@@ -263,7 +265,7 @@ const Page = () => {
           </motion.div>
         </div>
 
-        <div className="mb-32">
+        <div className="">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -305,6 +307,8 @@ const Page = () => {
         </div>
       </div>
     </main>
+    <Footer />
+    </>
   );
 };
 

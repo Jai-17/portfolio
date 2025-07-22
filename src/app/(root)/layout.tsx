@@ -28,14 +28,9 @@ const links = [
     href: "/about",
   },
   {
-    title: "Tech Projects",
+    title: "Projects",
     icon: IconCode,
-    href: "/tech-projects",
-  },
-  {
-    title: "UX Projects",
-    icon: IconLayoutDashboard,
-    href: "/ux-projects",
+    href: "/projects",
   },
   {
     title: "Extra",
