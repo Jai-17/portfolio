@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const against = localFont({
   src: "./fonts/Against.ttf",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${satoshi.className} ${against.variable} antialiased bg-black`}
       >
         {children}
+        <Toaster theme="dark" swipeDirections={["bottom"]} />
       </body>
     </html>
   );

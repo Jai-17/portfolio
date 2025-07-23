@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { PlaceholdersAndVanishInput } from "../VanishInput";
+import { toast } from "sonner";
 
 const Footer = () => {
   const [value, setValue] = useState("");
@@ -20,6 +21,11 @@ const Footer = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("submitted");
+    toast.custom((t) => (
+      <div className="bg-neutral-900 text-white px-8 py-6 rounded-lg shadow">
+        Message Sent Successfully!
+      </div>
+    ));
     try {
       await fetch("/api/contact", {
         method: "POST",
@@ -52,7 +58,9 @@ const Footer = () => {
         />
 
         <div className="mt-10 text-zinc-600">
-          <p className="text-zinc-500">Built with Background Music and VSCode</p>
+          <p className="text-zinc-500">
+            Built with Background Music and VSCode
+          </p>
           <p className="mt-2 text-zinc-500">© Jai Madhukar, probably</p>
         </div>
       </div>

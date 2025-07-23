@@ -3,6 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/lib/hooks/useOutsideClick";
+import { experienceCards as cards } from "@/lib/constants";
 import { MapPin } from "lucide-react";
 
 export function Experience() {
@@ -190,77 +191,3 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
-
-const cards = [
-  {
-    title: "Summer Intern",
-    description: "InMobi",
-    ctaText: "Jun 2025 – Present",
-    location: "New Delhi",
-    content: () => (
-      <p>
-        • Worked closely with engineering teams to enhance core product features.<br />
-        • Gained hands-on experience in ad-tech systems, debugging, and performance tuning.<br />
-        • Contributed to frontend improvements and collaborated cross-functionally for UI consistency.
-      </p>
-    ),
-  },
-   {
-    title: "Software Engineer Intern",
-    description: "Center of Excellence | Data Science & Artificial Intelligence",
-    ctaText: "Jan 2025 – Present",
-    location: "Patiala",
-    content: () => (
-      <p>
-        • Developed Python-based automation scripts to streamline data preprocessing and pipeline execution.<br />
-        • Collaborated with a team of researchers on an NLP project focused on sentiment analysis in regional languages.<br />
-        • Integrated visual dashboards using Streamlit and Plotly for real-time insight into model metrics.<br />
-        • Actively contributed to model training and evaluation processes in a production-like ML environment.
-      </p>
-    ),
-  },
-  {
-    title: "Software Project Intern",
-    description: "Thapar Institute of Engineering & Technology",
-    ctaText: "May 2024 – Nov 2024",
-    location: "Patiala",
-    content: () => (
-      <p>
-        • Engineered and deployed a scalable Hostel Management System serving 10,000+ users, streamlining
-        room allocation, facility services, and complaint resolution.<br />
-        • Crafted and integrated 16 interactive 3D hostel models using Blender and Three.js, enhancing spatial
-        visualization and user navigation.<br />
-        • Designed and built responsive user interfaces using Next.js and Material-UI (MUI), ensuring seamless interaction
-        and enhanced user experience.
-      </p>
-    ),
-  },
-  {
-    title: "Motion Graphic Designer",
-    description: "Convrse.ai",
-    ctaText: "Feb 2024 – Apr 2024",
-    location: "Remote",
-    content: () => (
-      <p>
-        • Created motion graphics and short animated content for Convrse.ai’s marketing assets.<br />
-        • Collaborated with product and branding teams to produce visually engaging explainers.<br />
-        • Optimized workflows using After Effects and Figma for consistent delivery timelines.
-      </p>
-    ),
-  },
-  {
-    title: "UI/UX Designer Intern",
-    description: "Acuity Studios",
-    ctaText: "Apr 2023 – Nov 2023",
-    location: "Remote",
-    content: () => (
-      <p>
-        • Revamped and optimized UI/UX for a gaming platform, elevating user retention by 15% and boosting web
-        traffic through strategic user-centered enhancements.<br />
-        • Delivered personalized UI/UX, branding, and visual identity for over 10 distinct projects in partnership
-        with global clients.<br />
-        • Ensured alignment of design strategies while improving overall usability across applications.
-      </p>
-    ),
-  },
-];

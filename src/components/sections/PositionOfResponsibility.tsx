@@ -3,6 +3,7 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/lib/hooks/useOutsideClick";
+import { positionOfResponsibilityCards as cards } from "@/lib/constants";
 import { MapPin } from "lucide-react";
 
 export function PositionOfResponsibility() {
@@ -190,49 +191,3 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
-
-const cards = [
-  {
-    title: "General Secretary",
-    description: "Association of Computer Machinery, Thapar",
-    ctaText: "Aug 2024 – Aug 2025",
-    location: "TIET, Patiala",
-    content: () => (
-      <p>
-        • Worked closely with engineering teams to enhance core product features.<br />
-        • Gained hands-on experience in ad-tech systems, debugging, and performance tuning.<br />
-        • Contributed to frontend improvements and collaborated cross-functionally for UI consistency.
-      </p>
-    ),
-  },
-   {
-    title: "Joint Overall Event Coordinator",
-    description: "Center for Training & Development",
-    ctaText: "Oct 2024 - Jun 2025",
-    location: "TIET, Patiala",
-    content: () => (
-      <p>
-        • Developed Python-based automation scripts to streamline data preprocessing and pipeline execution.<br />
-        • Collaborated with a team of researchers on an NLP project focused on sentiment analysis in regional languages.<br />
-        • Integrated visual dashboards using Streamlit and Plotly for real-time insight into model metrics.<br />
-        • Actively contributed to model training and evaluation processes in a production-like ML environment.
-      </p>
-    ),
-  },
-  {
-    title: "Joint Secretary",
-    description: "Tech Syndicate",
-    ctaText: "May 2021 - May 2022",
-    location: "AISG-46, Gurgraon",
-    content: () => (
-      <p>
-        • Engineered and deployed a scalable Hostel Management System serving 10,000+ users, streamlining
-        room allocation, facility services, and complaint resolution.<br />
-        • Crafted and integrated 16 interactive 3D hostel models using Blender and Three.js, enhancing spatial
-        visualization and user navigation.<br />
-        • Designed and built responsive user interfaces using Next.js and Material-UI (MUI), ensuring seamless interaction
-        and enhanced user experience.
-      </p>
-    ),
-  },
-];

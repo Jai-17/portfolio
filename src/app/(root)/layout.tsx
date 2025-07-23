@@ -6,7 +6,6 @@ import {
   IconHome,
   IconUser,
   IconCode,
-  IconLayoutDashboard,
   IconStars,
 } from "@tabler/icons-react";
 import React, { ReactNode, useEffect, useState } from "react";
@@ -86,7 +85,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
             )}
           />
           {/* Radial gradient for the container to give a faded look */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_7%,black)] bg-black"></div>
+          <div className="pointer-events-none fixed inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_7%,black)] bg-black"></div>
           {children}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
