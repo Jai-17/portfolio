@@ -140,13 +140,13 @@ export const projectUXDetailsData = [
   {
     design: true,
     pinTitle: "Behance",
-    pinLink: "https://github.com",
+    pinLink: "https://www.behance.net/gallery/168447251/GalaxyTravels",
     projectImage: "/galaxytravels.png",
     projectTitle: "Galaxy Travels",
     techstack: ["Branding", "Wireframing", "Motion Graphics", "User Persona"],
     projectDescription:
       "Designed a trip booking app for space travels. Overall Winner of Flamingo'23",
-    githubLink: "https://github.com",
+    githubLink: "https://www.behance.net/gallery/168447251/GalaxyTravels",
     isLive: false,
     demoLink: "https://live.com",
   },

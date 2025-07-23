@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         hostname: "api.microlink.io",
         pathname: "**", // Match all paths
       },
+       {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+        pathname: '/image/**',
+      },
     ],
   },
 };
