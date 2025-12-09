@@ -15,9 +15,15 @@ import { PositionOfResponsibility } from "@/components/sections/PositionOfRespon
 import Education from "@/components/sections/Education";
 import { motion } from "motion/react";
 import Footer from "@/components/sections/Footer";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
   const words = ["cool", "creative", "aesthetic", "functional"];
+  const router = useRouter();
+
+  async function resumeButtonRedirect() {
+    router.push('/resume.pdf');
+  }
 
   return (
     <>
@@ -116,7 +122,7 @@ const Page = () => {
               ease: [0.22, 1, 0.36, 1],
             }}
           >
-            <Button className="mt-7 bg-white/5 border border-[#C4BCFF] backdrop-blur-md shadow-inner shadow-white/10 px-10">
+            <Button onClick={resumeButtonRedirect} className="mt-7 bg-white/5 border border-[#C4BCFF] backdrop-blur-md shadow-inner shadow-white/10 px-10">
               <ShinyText
                 text="Resume"
                 speed={3}
